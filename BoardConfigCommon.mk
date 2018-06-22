@@ -9,6 +9,8 @@ include vendor/xiaomi/sm8650-common/BoardConfigVendor.mk
 
 COMMON_PATH := device/xiaomi/sm8650-common
 
+BUILD_BROKEN_DUP_RULES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
