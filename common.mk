@@ -47,6 +47,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 34
 BOARD_SHIPPING_API_LEVEL := 34
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
+
+PRODUCT_PACKAGES_DEBUG += bootctl
+
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti
